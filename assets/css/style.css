@@ -55,10 +55,11 @@ nav{
     display: flex;
     justify-content: space-between;
     position: fixed;
-    width: 1154px;
+    width: 1134px;
     background: #fff;
     z-index: 100;
 }
+
 nav ul{
     display: flex;
     align-items: center;
@@ -148,4 +149,79 @@ nav ul li a{
 .footer{
     margin-top: 200px;
     text-align: center;
+}
+
+@media(max-width: 1400px){
+    .wrapper{
+        width: 90%;
+    }
+    nav{
+       width: 90%;
+    }
+}
+@media(max-width: 1200px){
+    .home-section .right img{
+        width: 500px;
+    }
+}
+@media(max-width: 1000px){
+    .card{
+        padding: 20px;
+    }
+    .cards{
+        padding: 20px 30px;
+    }
+}
+@media(max-width: 950px){
+    .gallery-section .images{
+        grid-template-columns: auto auto;
+    }
+    .history-section .left img{
+        width: 500px;
+    }
+}
+@media(max-width: 900px){
+    .cards{
+        padding: 20px 20px;
+    }
+    .navs{
+        display: none;
+    }
+}
+@media(max-width: 860px){
+    .home-section .right img, .history-section .left{
+        display: none;
+    }
+    .home-section, .history-section{
+        text-align: center;
+    }
+    .home-section .left, .history-section .right{
+        width: 100%;
+    }
+}
+@media(max-width: 780px){
+    .mobile{
+        display: none;
+    }
+}
+@media(max-width: 650px){
+    .cards{
+       flex-direction: column;
+    }
+    .gallery-section .images{
+        grid-template-columns: auto;
+    }
+}
+@media(max-width: 600px){
+    .nav-mobile{
+        display: none;
+    }
+    .logo{
+        width: 100px;
+    }
+}
+@media(max-width: 350px){
+    h1{
+        font-size: 35px;
+    }
 }
