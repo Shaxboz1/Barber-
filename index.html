@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
         <div class="wrapper">
@@ -12,11 +13,21 @@
                 <ul>
                     <li ><img class="logo" src="./assets/img/logo.png"></li>
                 </ul>
+                <ul class="nav-mobile sidebar">
+                    <button class="close-btn" onclick="hideSideBar()">X</i></button>
+                    <li><a class="links" href="#home">Home</a></li>
+                    <li><a class="links" href="#history">History</a></li>
+                    <li><a class="links" href="#service">Services</a></li>
+                    <li><a class="links" href="#gallery">Gallary</a></li>
+                </ul>
                 <ul class="nav-mobile">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#gallery">Gallary</a></li>
+                </ul>
+                <ul class="menu-button">
+                    <button class="menu-button" onclick="showSideBar()"><i class='bx bx-menu'></i></button>
                 </ul>
 
                 <ul class="navs">
@@ -104,13 +115,14 @@
         </section>
     <div class="wrapper">
         <div class="footer">
-           <img class="footer-img" src="./assets/img/logo.png">
+           <img class="footer-img logo" src="./assets/img/logo.png">
            <p>It is a long established fact that a reader will be <br> distracted by the readable </p>
           <div class="icons">
-           <img src="./assets/img/facebook.png">
-           <img src="./assets/img/twitter.png">
-           <img src="./assets/img/google.png">
+           <div class="icon"><img class="face" src="./assets/img/facebook.png"></div>
+           <div class="icon"><img src="./assets/img/twitter.png"></div>
+           <div class="icon"><img src="./assets/img/google.png"></div>
           </div>
+          <hr>
         </div> 
     </div>
 
