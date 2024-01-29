@@ -11,6 +11,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+h4{
+    text-align: start;
+}
 h1{
     color: var(--blue);
     font-weight: bold;
